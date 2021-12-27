@@ -51,14 +51,13 @@ const Main = (props) => {
                     </Description>
                     <SharedImg>
                         <a>
-                            <img src="" alt="" />
+                            <img src="/images/17520.jpg" alt="" />
                         </a>
                     </SharedImg>
                     <SocialCounts>
                         <li>
                             <button>
                                 <img src="/images/like.svg" alt="" />
-                                <img src="/images/clapping.svg" alt="" />
                                 <span>75</span>
                             </button>                            
                         </li>
@@ -68,22 +67,24 @@ const Main = (props) => {
                             </a>
                         </li>
                     </SocialCounts>
-                    <button>
-                        <img src="/images/hand-thumbs-up.svg" alt="" />
-                        <span>Like</span>
-                    </button>
-                    <button>
-                        <img src="/images/comment.svg" alt="" />
-                        <span>Comment</span>
-                    </button>
-                    <button>
-                        <img src="/images/hand-thumbs-up.svg" alt="" />
-                        <span>Share</span>
-                    </button>
-                    <button>
-                        <img src="/images/hand-thumbs-up.svg" alt="" />
-                        <span>Send</span>
-                    </button>
+                    <SocialActions>
+                        <button>
+                            <img src="/images/hand-thumbs-up.svg" alt="" />
+                            <span>Like</span>
+                        </button>
+                        <button>
+                            <img src="/images/comment.svg" alt="" />
+                            <span>Comment</span>
+                        </button>
+                        <button>
+                            <img src="/images/share.svg" alt="" />
+                            <span>Share</span>
+                        </button>
+                        <button>
+                            <img src="/images/send.svg" alt="" />
+                            <span>Send</span>
+                        </button>
+                    </SocialActions>
                 </Article>
             </div>
         </Container>
@@ -267,6 +268,32 @@ const SocialCounts = styled.ul`
             display: flex;
         }
     }
+`;
+
+const SocialActions = styled.div`
+
+    align-items: center;
+    margin: 0;
+    padding: 4px;
+
+    button { 
+        display: inline-flex;       
+        outline: none;
+        border: none;
+        background: transparent;
+        color: #0a66c2;
+        font-size: 14px;
+        line-height: 1.5;
+        min-height: 24px;
+        align-items: center;
+        font-weight: 600;    
+        padding: 4px 8px;    
+        margin: 0 10x;
+
+            img {
+                margin-right: 4px;
+            }
+        }
 `;
 
 export default Main;
